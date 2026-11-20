@@ -1,6 +1,6 @@
 import random
 
-secretWords = [
+wordsList = [
   "apple", 
   "banana", 
   "monkey", 
@@ -425,9 +425,34 @@ secretWords = [
 ]
 # maximum, candy, minimum, dryer, dried, golf, plane, phase, vomit, frame, package, shell, ocean, fish, shark, orca, whale, shrimp, seaweed, weed, flower, power, token, gold, silver, program, guide, dead, die, dread, sport, ball, other, thing, carrot, cabbage, broccoli, dense, nutrient, clear, consenus, concentration, vitamin, mineral, protein, online, vegetable, meat, carnivore, diet, compare, animal, plant, herbivore, omnivore, teeth, nose, eye, glasses, house, home, security, socket, switch, router, cable, wire, cord, hawser, tank, military, anchor, ship, rope, material, handle, secure, vessel, pier, buoy, connect, tugboat, boat, dock, store, storage, deck, engineer, math, science, practical, problem, design, build, improve, technologie, system, structure, work, world, limit, rule, budget, analyze, coordinate, document, fox, dig, technical, manager, project, python, snake, posion, venom, lemon, lemonade, stand, son, daughter, sister, brother, family, television, romance, detective, picture, one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, accused, blame, wrong, right, left, up, down, new, news, event, name, person, story, offense, crime, criminal, jail, prison, soft, hard, king, queen, grandfather, grand, grandmother, copy, paste, taste, emergency, agency, suspicion, mastermind, microphone, back, ground, background, bank, wallet, wall, street, leader, leadership, objective, legislation, conspiracy, entitlement, computing, accountant, assignment, indication, astonishing, fireplace, place, brick, log, swipe, nerve, brain, food, flash, thunder, cloud, server, script, weapon, chart, cash, fisherman, excavation, advocate, able, collect, company, eavesdrop, print, obligation, rest, restless, seperation, candle, rail, adviser, information, reinforce, force, reinforcement, wound, round, loom, barrel, mead, diameter, betray, nationalism, uncertainty, certainty, hospitality, toss, throw, bend, straight, forward, cattle, farm, garden, hoe, shovel, gate, fence, lock, door, plank, complete, abuse, save, basic, warning, plain, swell, cereal, compound, column, menu, concede, troop, request, quest, tail, foot, broke, penetrate, valid, invalid, breathe, qualify, suburb, parameter, squeeze, guilt, plug, snap, part, domination, tension, tick, memory, lighter, loss, punch, race, resign, union, tactic, glory, laser, chance, describe, patch, keyboard, window, board, prestige, tablet, table, bare, bless, auction, breeze, indulge, mind, access, side, inside, temptation, racism, middle, shape, rectangle, sqaure, plus, minus, ranch, brilliance, fragment, exhibition, dismiss, lineage, stubborn, slip, cheat, order, earwax, horseshoe, shoe, cinema, horn, endorse, mutual, choke, elaborate, eternal, guideline, rehabilitation, sailor, conscious, wave, perfect, injury, number, fast, slow, rough, pump, sweet, sour, cream, fiction, hero, fairy, fairytail, squash, ash, area, reliable, willpower, will, band, hemisphere, mess, diagram, wording, arrow, jury, smell, blind, blond, automatic, coffee, site, loose, touch, hear, silent, kneel, tendency, cunning, siege, steak, friendly, grave, rage, cult, final, start, beginning, end, reptile, criticism, faith, archive, acceptance, announcement, tower, defense, attack, middle, sunrise, pound, explosion, beast, convict, circle, reporter, follower, god, leek, leak, liguid, gas, escape, itself, difference, leaves, bush, cut, swing, slash, star, space, spaceship, suffer, release, lease, sink, kitchen, fork, farmer, stalk, stalker, soup, breakdown, pasta, common, uncommon, lamb, love, lawyer, grown, mutton, lime, leopard, cheetah, diamond, traffic , stuff, report, nearby, stretch, poles, several, occasional, public, private, local, town, city, country]
 
-for i, c in enumerate(secretWords):
+for i, c in enumerate(wordsList):
   print(i, c)
 
-ChoosenWord = random.choice(secretWords)
+choosenWord = random.choice(wordsList)
+lives = 6
+wordCounter = 0
+secretWord = ""
+print(choosenWord + " " + str(len(choosenWord)))
 
-print(ChoosenWord)
+for i in choosenWord:
+    print(i)
+    secretWord += "_"
+    print(secretWord)
+while True:
+    guess = input("Guess a letter: ")
+    for i in choosenWord:
+        if guess == i:
+            print("a word in the secret word: " + i)
+            wordCounter += 1
+
+    if wordCounter <= 0:
+        lives -= 1
+    else:
+        wordCounter = 0
+
+    print("lives: " + str(lives))
+    if lives <= 0:
+        break
+
+
+
