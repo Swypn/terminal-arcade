@@ -16,7 +16,7 @@ tools/
 workshop/
     Assignments, practice projects, and experiments.
 
-Current Arcade Games
+### Current Arcade Games
 
     Guess Number
     Coin Flip
@@ -26,7 +26,7 @@ Current Arcade Games
     Blackjack
     Tic Tac Toe (work in progress)
 
-Goals
+### Goals
 
     Learn Python by building projects.
     Improve Linux and terminal skills.
@@ -34,13 +34,13 @@ Goals
     Build first, refactor later.
     Keep projects simple and fun.
 
-Future Games
+### Future Games
 
     Dice Poker
     Mastermind
     Minesweeper
 
-Notes
+### Notes
 
 This repository is a learning project. Code may be messy, repetitive, or unfinished while new ideas are being explored.
 The focus is on making things work, learning new concepts, and improving over time.
