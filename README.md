@@ -14,7 +14,7 @@ arcade/
 tools/
     Small utilities and scripts.
 
-workshop/
+lab/
     Assignments, practice projects, and experiments.
 
 ### Current Arcade Games
@@ -25,7 +25,8 @@ workshop/
     Higher or Lower
     Hangman
     Blackjack
-    Tic Tac Toe (work in progress)
+    Tic Tac Toe
+    Dice Poker (in progress)
 
 ### Goals
 
