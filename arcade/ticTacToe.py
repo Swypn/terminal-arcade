@@ -64,6 +64,51 @@ while True:
     for i in range(len(grid)):
         print(grid[i])
     
+
+    if grid[0][0] == "x" and grid[1][0] == "x" and grid[2][0] == "x":
+        print(f"player 1 won")
+        break
+    elif grid[0][0] == "x" and grid[0][1] == "x" and grid[0][2] == "x":
+        print(f"player 1 won")
+        break
+    elif grid[0][0] == "x" and grid[1][1] == "x" and grid[2][2] == "x":
+        print(f"player 1 won")
+        break
+    elif grid[0][1] == "x" and grid[1][1] == "x" and grid[2][1] == "x":
+        print(f"player 1 won")
+        break
+    elif grid[0][2] == "x" and grid[1][2] == "x" and grid[2][2] == "x":
+        print(f"player 1 won")
+        break
+    elif grid[1][0] == "x" and grid[1][1] == "x" and grid[1][2] == "x":
+        print(f"player 1 won")
+        break
+    elif grid[2][0] == "x" and grid[2][1] == "x" and grid[2][2] == "x":
+        print(f"player 1 won")
+        break
+
+    if grid[0][0] == "o" and grid[1][0] == "o" and grid[2][0] == "o":
+        print(f"player 2 won")
+        break
+    elif grid[0][0] == "o" and grid[0][1] == "o" and grid[0][2] == "o":
+        print(f"player 2 won")
+        break
+    elif grid[0][0] == "o" and grid[1][1] == "o" and grid[2][2] == "o":
+        print(f"player 2 won")
+        break
+    elif grid[0][1] == "o" and grid[1][1] == "o" and grid[2][1] == "o":
+        print(f"player 2 won")
+        break
+    elif grid[0][2] == "o" and grid[1][2] == "o" and grid[2][2] == "o":
+        print(f"player 2 won")
+        break
+    elif grid[1][0] == "o" and grid[1][1] == "o" and grid[1][2] == "o":
+        print(f"player 2 won")
+        break
+    elif grid[2][0] == "o" and grid[2][1] == "o" and grid[2][2] == "o":
+        print(f"player 2 won")
+        break
+
     print("player 2")
     guess = input("number: ")
     if guess == "1" and not is1Occupied:
@@ -95,5 +140,53 @@ while True:
         is9Occupied = True
     else:
         print("incorrect input, next player turn instead")
+    
+    if grid[0][0] == "x" and grid[1][0] == "x" and grid[2][0] == "x":
+        print(f"player 1 won")
+        break
+    elif grid[0][0] == "x" and grid[0][1] == "x" and grid[0][2] == "x":
+        print(f"player 1 won")
+        break
+    elif grid[0][0] == "x" and grid[1][1] == "x" and grid[2][2] == "x":
+        print(f"player 1 won")
+        break
+    elif grid[0][1] == "x" and grid[1][1] == "x" and grid[2][1] == "x":
+        print(f"player 1 won")
+        break
+    elif grid[0][2] == "x" and grid[1][2] == "x" and grid[2][2] == "x":
+        print(f"player 1 won")
+        break
+    elif grid[1][0] == "x" and grid[1][1] == "x" and grid[1][2] == "x":
+        print(f"player 1 won")
+        break
+    elif grid[2][0] == "x" and grid[2][1] == "x" and grid[2][2] == "x":
+        print(f"player 1 won")
+        break
+
+    if grid[0][0] == "o" and grid[1][0] == "o" and grid[2][0] == "o":
+        print(f"player 2 won")
+        break
+    elif grid[0][0] == "o" and grid[0][1] == "o" and grid[0][2] == "o":
+        print(f"player 2 won")
+        break
+    elif grid[0][0] == "o" and grid[1][1] == "o" and grid[2][2] == "o":
+        print(f"player 2 won")
+        break
+    elif grid[0][1] == "o" and grid[1][1] == "o" and grid[2][1] == "o":
+        print(f"player 2 won")
+        break
+    elif grid[0][2] == "o" and grid[1][2] == "o" and grid[2][2] == "o":
+        print(f"player 2 won")
+        break
+    elif grid[1][0] == "o" and grid[1][1] == "o" and grid[1][2] == "o":
+        print(f"player 2 won")
+        break
+    elif grid[2][0] == "o" and grid[2][1] == "o" and grid[2][2] == "o":
+        print(f"player 2 won")
+        break
+
+
+
+
 
 
